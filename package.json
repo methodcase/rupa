@@ -1,0 +1,20 @@
+{
+  "name": "rupa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/methodcase/rupa.git"
+  },
+  "keywords": [],
+  "author": "Gerard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/methodcase/rupa/issues"
+  },
+  "homepage": "https://github.com/methodcase/rupa#readme"
+}
