@@ -1,6 +1,6 @@
 import React from 'react'
-var socket = require('socket.io-client')(`http://${location.hostname}:6007`)
-//var socket = require('socket.io-client')(`https://gohanio1.mybluemix.net/`)
+//var socket = require('socket.io-client')(`http://${location.hostname}:6007`)
+var socket = require('socket.io-client')(`https://rupamessage.mybluemix.net/`)
 import Message from './message.js'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -35,7 +35,7 @@ const autoScroll = {
 }
 
 const localstate = {};   
-//socket.emit('system', {sender:'system',data:'initialize'})
+socket.emit('system', {sender:'system',data:'initialize'})
 sessionStorage.setItem('session', Math.random().toString(36).substring(2,8));
 const session = sessionStorage.getItem('session');    
 export default class Chat extends React.Component{
@@ -55,7 +55,7 @@ export default class Chat extends React.Component{
     }    
     componentDidUpdate(){
         const div = this.divList        
-        div.scrollTop = 20000 
+        div.scrollTop = 100
         toky.onresult((result) => {   
             this.setState({typing:true})          
             if (result.final){
