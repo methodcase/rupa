@@ -1,7 +1,7 @@
 # R.U.P.A
 ### Remarkable Understanding PLDT Agent
     
-    Rupa is a messaging chat bot, that can perform simple taks and give out instant answers to common PLDT customer inquiries.
+   Rupa is a messaging chat bot, that can perform simple taks and give out instant answers to common PLDT customer inquiries.
     
 ### Technologies Used
  - ReactJS
