@@ -21568,8 +21568,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var socket = __webpack_require__(442)('http://' + location.hostname + ':6007');
-	//var socket = require('socket.io-client')(`https://gohanio1.mybluemix.net/`)
+	//var socket = require('socket.io-client')(`http://${location.hostname}:6007`)
+	var socket = __webpack_require__(442)('https://rupamessage.mybluemix.net/');
 
 
 	(0, _reactTapEventPlugin2.default)();
@@ -21592,7 +21592,7 @@
 	};
 
 	var localstate = {};
-	//socket.emit('system', {sender:'system',data:'initialize'})
+	socket.emit('system', { sender: 'system', data: 'initialize' });
 	sessionStorage.setItem('session', Math.random().toString(36).substring(2, 8));
 	var session = sessionStorage.getItem('session');
 
@@ -21629,7 +21629,7 @@
 	            var _this2 = this;
 
 	            var div = this.divList;
-	            div.scrollTop = 20000;
+	            div.scrollTop = 100;
 	            toky.onresult(function (result) {
 	                _this2.setState({ typing: true });
 	                if (result.final) {
@@ -30286,7 +30286,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'iframe',
-	                        { width: '450', height: '250', frameborder: '0', src: "https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCzpbgoECGhplawnFLBNgCVStWyMY30Ku8&location=" + res.latlon + "&heading=210&pitch=10&fov=35" },
+	                        { width: '300', height: '300', frameborder: '0', src: "https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCzpbgoECGhplawnFLBNgCVStWyMY30Ku8&location=" + res.latlon + "&heading=210&pitch=10&fov=35" },
 	                        ' '
 	                    )
 	                );
@@ -30298,7 +30298,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { style: { height: 200, overflowY: 'auto' } },
 	                _react2.default.createElement(
 	                    'ul',
 	                    null,
