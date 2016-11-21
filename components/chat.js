@@ -113,7 +113,7 @@ export default class Chat extends React.Component{
     render(){
         return (<Paper zDepth={1}>
                 <AppBar style={style} 
-                title="RUPA - Remarkable Understanding PLDT Agent"
+                title="RUPA"
                 />                            
                 
                 <div style={autoScroll}  ref={(div) => this.divList = div}> 
