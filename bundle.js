@@ -21706,7 +21706,7 @@
 	                _Paper2.default,
 	                { zDepth: 1 },
 	                _react2.default.createElement(_AppBar2.default, { style: style,
-	                    title: 'RUPA'
+	                    title: 'RUPA - Remarkable Understanding PLDT Agent'
 	                }),
 	                _react2.default.createElement(
 	                    'div',
