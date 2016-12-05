@@ -1,7 +1,6 @@
 import React from 'react'
 //var socket = require('socket.io-client')(`http://${location.hostname}:6007`)
 var socket = require('socket.io-client')(`https://rupamessage.mybluemix.net/`)
-import Message from './message.js'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
@@ -11,8 +10,10 @@ import TextField from 'material-ui/TextField';
 import Divider from 'material-ui/Divider';
 import Snackbar from 'material-ui/Snackbar';
 import FontIcon from 'material-ui/FontIcon';
-import Toky from '../toky.js'
+import Message from './message.js'
 import Typing from './typing.js'
+import Menu from './menu.js'
+import Toky from '../toky.js'
 
 injectTapEventPlugin();
 
@@ -110,7 +111,7 @@ export default class Chat extends React.Component {
     render() {
         return (<Paper zDepth={1}>
             <AppBar style={style} title="RUPA" />
-
+            <Menu />
             <div style={autoScroll} ref={(div) => this.divList = div}>
                 <Message chats={localstate.chats} session={session} />
                 {this.state.typing ? <Typing /> : null}
