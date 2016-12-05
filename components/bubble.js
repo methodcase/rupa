@@ -1,13 +1,13 @@
 import React from 'react'
 
-const styleRight = {    	
+const styleRight = {
     position: 'relative',
-    width: 'auto',    
+    width: 'auto',
     padding: '0px',
-    background: '#eee',    
+    background: '#eee',
     borderRadius: '5px',
-    padding:'12px',
-    color:'#000'
+    padding: '12px',
+    color: '#000'
 }
 
 const triRight = {
@@ -24,14 +24,14 @@ const triRight = {
 }
 
 
-const style = {    	
+const style = {
     position: 'relative',
-    width: 'auto',    
+    width: 'auto',
     padding: '0px',
-    background: '#E53935',    
+    background: '#E53935',
     borderRadius: '5px',
-    padding:'12px',
-    color:'#fff'
+    padding: '12px',
+    color: '#fff'
 }
 
 const tri = {
@@ -48,11 +48,11 @@ const tri = {
 }
 
 const Bubble = props => (
-        <div>
-            <div style={props.right === true ? tri : triRight}/>
-            <div style={props.right === true ? styleRight : style}>{props.text}</div>
-            <div style={props.right === true ? triRight : tri}/>
-        </div>
+    <div>
+        <div style={props.right === true ? tri : triRight} />
+        <div style={props.right === true ? styleRight : style}>{props.text}</div>
+        <div style={props.right === true ? triRight : tri} />
+    </div>
 )
 
 export default Bubble
