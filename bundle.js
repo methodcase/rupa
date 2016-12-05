@@ -21697,8 +21697,7 @@
 	            return _react2.default.createElement(
 	                _Paper2.default,
 	                { zDepth: 1 },
-	                _react2.default.createElement(_AppBar2.default, { style: style, title: 'RUPA' }),
-	                _react2.default.createElement(_menu2.default, null),
+	                _react2.default.createElement(_AppBar2.default, { style: style, title: 'RUPA', iconElementRight: _react2.default.createElement(_menu2.default, null) }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { style: autoScroll, ref: function ref(div) {
@@ -41885,10 +41884,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	/**
-	 * Simple Icon Menus demonstrating some of the layouts possible using the `anchorOrigin` and
-	 * `targetOrigin` properties.
-	 */
 	var Menu = function Menu() {
 	  return _react2.default.createElement(
 	    'div',
@@ -41904,11 +41899,8 @@
 	        anchorOrigin: { horizontal: 'left', vertical: 'top' },
 	        targetOrigin: { horizontal: 'left', vertical: 'top' }
 	      },
-	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Refresh' }),
-	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Send feedback' }),
-	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Settings' }),
-	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Help' }),
-	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Sign out' })
+	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'About Rupa' }),
+	      _react2.default.createElement(_MenuItem2.default, { primaryText: 'Info' })
 	    )
 	  );
 	};

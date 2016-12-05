@@ -110,8 +110,8 @@ export default class Chat extends React.Component {
     }
     render() {
         return (<Paper zDepth={1}>
-            <AppBar style={style} title="RUPA" />
-            <Menu />
+            <AppBar style={style} title="RUPA" iconElementRight={<Menu />} /> 
+            
             <div style={autoScroll} ref={(div) => this.divList = div}>
                 <Message chats={localstate.chats} session={session} />
                 {this.state.typing ? <Typing /> : null}
